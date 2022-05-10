@@ -1,0 +1,5 @@
+/*Tamaño Widht y Margin*/
+@mixin Wih-Mar ($width, $margin){
+    width: $width;
+    margin: $margin;    
+}

@@ -1,0 +1,26 @@
+{
+  "name": "pabloesquilache-websupermercadoalcer",
+  "version": "1.0.0",
+  "description": "Esta el la web de Supermercado AlCer. En este sitio encontraras todos los productos que estas buscando, a los mejores precios, con todos los medios de pago y ademas hacemos envio a domicilio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pablo-Esquilache/WebSupermercadoAlCer"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pablo-Esquilache/Web---Supermercado/issues"
+  },
+  "homepage": "https://github.com/Pablo-Esquilache/Web---Supermercado#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

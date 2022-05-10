@@ -1,0 +1,7 @@
+- En todas las paginas les modifique el titulo. 
+Le agregue el monbre de la empresa, mas la seccion en la que se encontraba. Por ejemplo: "Supermercado AlCer/HOME"
+- En todas las paginas le agregue keywords. 
+Para todas las paginas use la misma, ""Supermercado, Almacen, cercania, ofertas, buenos precios, envio a domicilio, cuotas sin interes, todos los medio de pago"
+- En todas las paginas agregue Description.
+Para todas las paginas agregue este texto:
+"En este sitio encontraras todos los productos que estas buscando, a los mejores precios, con todos los medios de pago y ademas hacemos envio a domicilio." mas un texto presonalizado para cada seccion.
