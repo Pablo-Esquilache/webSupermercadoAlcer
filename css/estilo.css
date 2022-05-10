@@ -284,7 +284,7 @@ footer {
     grid-gap: 5px;
     font-size: 2.5rem; }
   .shopSecciones {
-    margin-left: 25%;
+    margin-left: 20%;
     margin-right: 5px; } }
 
 @media screen and (max-width: 768px) {
@@ -314,7 +314,7 @@ footer {
     grid-gap: 5px;
     font-size: 2.5rem; }
   .shopSecciones {
-    margin-left: 25%;
+    margin-left: 22.5%;
     margin-right: 5px; } }
 
 @media screen and (max-width: 600px) {
@@ -398,7 +398,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 425px) {
   /*BODY*/
   body {
     width: 97.5%; }
@@ -455,8 +455,8 @@ footer {
     grid-template-rows: 50px, 1fr, 1fr, 50px; }
   .gridItem3Nosotros {
     font-size: 2rem;
-    margin-left: 15px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    max-width: 100%; }
   .nosotrosContenedor img {
     max-width: 100%; }
   .videoNosotros {

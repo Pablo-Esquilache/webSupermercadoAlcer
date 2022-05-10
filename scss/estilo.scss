@@ -335,7 +335,7 @@ footer {
         font-size: 2.5rem;    
 }
     .shopSecciones {
-        margin-left: 25%;
+        margin-left: 20%;
         margin-right: 5px;
 }
 }
@@ -380,7 +380,7 @@ footer {
         font-size: 2.5rem;    
 }
     .shopSecciones {
-        margin-left: 25%;
+        margin-left: 22.5%;
         margin-right: 5px;
 }
 }
@@ -496,7 +496,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 425px) {
     /*BODY*/
     body {
         width: 97.5%;
@@ -575,8 +575,8 @@ footer {
     }
     .gridItem3Nosotros {
         font-size: 2rem;
-        margin-left: 15px;
         margin-top: 50px;
+        max-width: 100%;
     }
     .nosotrosContenedor img {
         max-width: 100%;
