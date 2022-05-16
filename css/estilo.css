@@ -12,7 +12,7 @@ html {
 /*BODY*/
 body {
   background-image: linear-gradient(rgba(255, 190, 0, 0.842), rgba(255, 150, 0, 0.842), rgba(255, 130, 0, 0.842), rgba(255, 150, 0, 0.842), rgba(255, 190, 0, 0.842));
-  width: 99.2%; }
+  width: 100%; }
 
 #titulo {
   font-size: 10rem;
@@ -64,54 +64,28 @@ ul li:hover {
   display: none; }
 
 /*ANIDACION INDEX*/
+.gridItem2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  border: solid 2px red; }
+
 .formIngreso {
   margin-left: 15px;
-  font-size: 3rem;
-  width: 50%;
-  top: 0px; }
+  font-size: 2.5rem; }
   .formIngreso input {
-    width: 200px;
+    width: 250px;
     margin: 5px;
-    padding: 5px;
     border-radius: 10px; }
-
-.ofertaInicio {
-  text-align: center;
-  margin-top: 50px; }
-  .ofertaInicio input {
-    width: 150px;
-    margin: 5px;
-    height: 25px;
-    border-radius: 10px; }
-  .ofertaInicio img {
-    border-radius: 10px;
-    margin: 5px;
-    width: 350px; }
-
-.gridContainer {
-  display: grid;
-  grid-template-areas: "nav nav" "section aside" "footer footer";
-  grid-template-rows: 50px, auto, 50px;
-  grid-template-columns: 1fr, 1fr;
-  height: 100vh; }
-
-header {
-  grid-area: nav; }
-
-section {
-  grid-area: section; }
-
-aside {
-  grid-area: aside; }
-
-footer {
-  grid-area: footer; }
+  .formIngreso h2 {
+    font-size: 3.5rem; }
 
 .gridItem3 {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  font-size: 3rem; }
+  width: 50%; }
+
+.carousel-inner {
+  margin: auto; }
 
 /*REGISTRO*/
 .formularioRegistro, .nosotrosContenedor {
