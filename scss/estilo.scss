@@ -30,6 +30,7 @@ body {
     font-size: $font-h1;
     margin-left: $marginL-h1;
     margin-top: $marginT-h1;
+    font-weight: 600;
 }
 ul li:hover {
     background-color: rgb(0, 68, 255);
@@ -50,6 +51,9 @@ ul li:hover {
     ol {
         margin-top: 10px;
     }
+    ::marker {
+        display: none;
+    }
 }
 
 /*MENU PRINCIPAL*/
@@ -57,24 +61,23 @@ ul li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
     background-color: $colorMenu;
     width: 100%;
-    height: 45px;
-    padding: 5px;
+    height: 50px;
+    padding: 3px;
     border-radius: $borderR;
     li {
         display: inline;
         margin: 10px;
-        }
-    a {
+        a {
         list-style: none;
         text-decoration: none;
         color: white;
        }    
     }
 .logoMenu {
-    width: 55px;
+    width: 45px;
     border-radius: 30px;
     }
 .iconoBarrasMenuPrincipal {
@@ -82,14 +85,12 @@ ul li:hover {
     display: none;
     }
 
-
 /*ANIDACION INDEX*/
 .gridItem2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    border: solid 2px red;
 }
 .formIngreso {
     margin-left: 15px;
@@ -106,57 +107,23 @@ ul li:hover {
 .gridItem3 {
     width: 50%;
 }
-.carousel-inner {
-    margin: auto;
+.carousel {
+    text-align: center;
+    h2 {
+    font-size: 3.5rem;
+    }
 }
-// .ofertaInicio {
-//     text-align: center;
-//     margin-top: 50px;
-//     input {
-//         @include Wih-Mar(150px,5px);
-//         height: 25px;
-//         border-radius: $borderR;
-//     }
-//     img {
-//         border-radius: $borderR;
-//         margin: 5px;
-//         width: 350px;
-//     }
-// }
-// .gridContainer {
-//     display: grid;
-//     grid-template-areas:
-//     "nav nav"
-//     "section aside"
-//     "footer footer";
-//     grid-template-rows: 50px, auto, 50px;
-//     grid-template-columns: 1fr, 1fr;   
-//     height: 100vh; 
-// }
-// header {
-//     grid-area: nav;
-// }
-// section {
-//     grid-area: section;
-// }
-// aside {
-//     grid-area: aside;
-// }
-// footer {
-//     grid-area: footer;
-// }
-// .gridItem3 {
-//     display: flex;
-//     justify-content: center;
-//     margin-top: 70px;
-//     font-size: 3rem;
-// }
+.carousel-inner {
+    margin-left: 25%;
+}
 
 /*REGISTRO*/
 .formularioRegistro {
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    h2 {
+    font-size: 3.5rem;
+    }
 }
 .formulario {
     font-size: 2.5rem;
@@ -401,7 +368,7 @@ footer {
 @media screen and (max-width: 600px) {
     /*BODY*/
     body {
-        width: 98.2%;
+        width: 100%;
     }
     /*GENERAL*/
     #titulo {
@@ -427,26 +394,58 @@ footer {
         transition: 1s;
     }
     /*HOME*/
-    .gridContainer {
-        display: grid;
-        grid-template-areas:
-        "nav"
-        "section"
-        "aside"
-        "footer";
-        grid-template-rows: 50px, 1fr, 2fr, 50px;
-        grid-column: auto;
-        font-size: 1.5rem;
-    }
-    .contenedorIngreso {
+    .gridItem2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.8rem;
+        width: 100%;
+    }
+    .formIngreso {
+        margin-left: 15px;
+        font-size: 2.5rem;
+    //MIXIN
+        input {
+            @include Wih-Mar(250px,5px);
+            border-radius: $borderR;
+        }
+        h2 {
+            font-size: 3.5rem;
+        }
     }
     .gridItem3 {
+        width: 50%;
         margin-top: 50px;
     }
+    .carousel {
+        text-align: center;
+        h2 {
+        font-size: 3.5rem;
+        }
+    }
+    .carousel-inner {
+        margin-left: 25%;
+    }
+    // .gridContainer {
+        
+    //     display: grid;
+    //     grid-template-areas:
+    //     "nav"
+    //     "section"
+    //     "aside"
+    //     "footer";
+    //     grid-template-rows: 50px, 1fr, 2fr, 50px;
+    //     grid-column: auto;
+    //     font-size: 1.5rem;
+    // }
+    // .contenedorIngreso {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     font-size: 1.8rem;
+    // }
+    // .gridItem3 {
+    //     margin-top: 50px;
+    // }
     /*REGISTRO*/
     .formulario {
         font-size: 2rem;
@@ -512,7 +511,7 @@ footer {
 @media screen and (max-width: 425px) {
     /*BODY*/
     body {
-        width: 97.5%;
+        width: 100%;
     }
      /*GENERAL*/
     #titulo {
@@ -541,26 +540,38 @@ footer {
         width: 45px;
     }
     /*HOME*/
-    .gridContainer {
-        display: grid;
-        grid-template-areas:
-        "nav"
-        "section"
-        "aside"
-        "footer";
-        grid-template-rows: 50px, 1fr, 2fr, 50px;
-        grid-column: auto;
-        font-size: 1.5rem;
-    }
-    .formIngreso {
+    .gridItem2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 1.8rem;
+        width: 100%;
+    }
+    .formIngreso {
+        margin-left: 15px;
+        font-size: 2.5rem;
+    //MIXIN
+        input {
+            @include Wih-Mar(250px,5px);
+            border-radius: $borderR;
+        }
+        h2 {
+            font-size: 3.5rem;
+        }
     }
     .gridItem3 {
+        width: 50%;
         margin-top: 50px;
     }
+    .carousel {
+        text-align: center;
+        h2 {
+        font-size: 3.5rem;
+        }
+    }
+    .carousel-inner {
+        margin-left: 25%;
+    }
+    
     /*REGISTRO*/
     .formulario {
         font-size: 2rem;
@@ -653,5 +664,5 @@ footer {
         border-radius: $borderR;
     }
 }
-
+}
 }

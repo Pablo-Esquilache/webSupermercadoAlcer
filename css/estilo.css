@@ -17,7 +17,8 @@ body {
 #titulo {
   font-size: 10rem;
   margin-left: margin-left 15px;
-  margin-top: margin-top 30px; }
+  margin-top: margin-top 30px;
+  font-weight: 600; }
 
 ul li:hover {
   background-color: #0044ff;
@@ -35,447 +36,446 @@ ul li:hover {
     margin: auto; }
   .pieDePagina ol {
     margin-top: 10px; }
+  .pieDePagina ::marker {
+    display: none; }
 
 /*MENU PRINCIPAL*/
 .menuPrincipal {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   background-color: rgba(8, 70, 240, 0.836);
   width: 100%;
-  height: 45px;
-  padding: 5px;
-  border-radius: 10px; }
+  height: 50px;
+  padding: 3px;
+  border-radius: 10px;
+  /*ANIDACION INDEX*/
+  /*REGISTRO*/
+  /*NOSOTROS*/
+  /*SHOP*/
+  /*CARRITO*/ }
   .menuPrincipal li {
     display: inline;
     margin: 10px; }
-  .menuPrincipal a {
-    list-style: none;
-    text-decoration: none;
-    color: white; }
-
-.logoMenu {
-  width: 55px;
-  border-radius: 30px; }
-
-.iconoBarrasMenuPrincipal {
-  color: white;
-  display: none; }
-
-/*ANIDACION INDEX*/
-.gridItem2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  border: solid 2px red; }
-
-.formIngreso {
-  margin-left: 15px;
-  font-size: 2.5rem; }
-  .formIngreso input {
-    width: 250px;
-    margin: 5px;
-    border-radius: 10px; }
-  .formIngreso h2 {
-    font-size: 3.5rem; }
-
-.gridItem3 {
-  width: 50%; }
-
-.carousel-inner {
-  margin: auto; }
-
-/*REGISTRO*/
-.formularioRegistro, .nosotrosContenedor {
-  display: flex;
-  justify-content: center;
-  font-size: 2.5rem; }
-
-.formulario {
-  font-size: 2.5rem;
-  margin-top: 10px; }
-  .formulario input {
-    padding: 5px;
-    margin: 5px;
-    width: 400px;
-    border-radius: 10px;
-    font-size: 1.5rem; }
-
-.checkRegistro {
-  width: 40px; }
-
-.selecSexo {
-  width: 400px;
-  padding: 5px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1.5rem; }
-
-#check {
-  width: 100px; }
-
-/*NOSOTROS*/
-.gridContainerNosotros {
-  display: grid;
-  grid-template-areas: "nav nav" "section aside" "footer footer";
-  grid-template-rows: 50px, auto, 50px;
-  grid-template-columns: auto;
-  height: 100vh; }
-
-header {
-  grid-area: nav; }
-
-section {
-  grid-area: section; }
-
-aside {
-  grid-area: aside; }
-
-footer {
-  grid-area: footer; }
-
-.gridItem2Nosotros img {
-  max-width: 100%;
-  margin-left: 15px;
-  border-radius: 10px; }
-
-.gridItem3Nosotros {
-  display: flex;
-  margin-left: 15px;
-  margin-top: 120px;
-  font-size: 2.5rem; }
-  .gridItem3Nosotros p {
-    padding: 8px; }
-
-/*SHOP*/
-.shopContenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.shopSublista {
-  position: fixed; }
-  .shopSublista li {
-    display: block;
-    padding: 5px;
-    height: 45px;
-    font-size: 3rem;
+    .menuPrincipal li a {
+      list-style: none;
+      text-decoration: none;
+      color: white; }
+  .menuPrincipal .logoMenu {
+    width: 45px;
+    border-radius: 30px; }
+  .menuPrincipal .iconoBarrasMenuPrincipal {
+    color: white;
+    display: none; }
+  .menuPrincipal .gridItem2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; }
+  .menuPrincipal .formIngreso {
     margin-left: 15px;
-    margin-top: 15px;
-    background-color: rgba(8, 70, 240, 0.836);
-    border-radius: 10px;
+    font-size: 2.5rem; }
+    .menuPrincipal .formIngreso input {
+      width: 250px;
+      margin: 5px;
+      border-radius: 10px; }
+    .menuPrincipal .formIngreso h2 {
+      font-size: 3.5rem; }
+  .menuPrincipal .gridItem3 {
+    width: 50%; }
+  .menuPrincipal .carousel {
     text-align: center; }
-    .shopSublista li:hover {
-      transform: scale(1.2);
-      transition: 0.5s; }
-  .shopSublista a {
-    list-style: none;
-    color: white;
-    text-decoration: none; }
-
-.seccionProductos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 5px;
-  font-size: 2.5rem; }
-
-.shopSecciones {
-  margin-left: 20%;
-  margin-right: 20px;
-  font-size: 3rem; }
-  .shopSecciones img {
-    width: 250px;
-    margin: 5px; }
-  .shopSecciones input {
-    padding: 0px;
+    .menuPrincipal .carousel h2 {
+      font-size: 3.5rem; }
+  .menuPrincipal .carousel-inner {
+    margin-left: 25%; }
+  .menuPrincipal .formularioRegistro, .menuPrincipal .nosotrosContenedor {
+    display: flex;
+    justify-content: center; }
+    .menuPrincipal .formularioRegistro h2, .menuPrincipal .nosotrosContenedor h2 {
+      font-size: 3.5rem; }
+  .menuPrincipal .formulario {
+    font-size: 2.5rem;
+    margin-top: 10px; }
+    .menuPrincipal .formulario input {
+      padding: 5px;
+      margin: 5px;
+      width: 400px;
+      border-radius: 10px;
+      font-size: 1.5rem; }
+  .menuPrincipal .checkRegistro {
+    width: 40px; }
+  .menuPrincipal .selecSexo {
+    width: 400px;
+    padding: 5px;
     border-radius: 10px;
-    width: 130px;
-    height: 40px;
-    font-size: 2rem; }
-  .shopSecciones h2 {
-    text-decoration: underline; }
-
-.seccionArticuloUnitario {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 10px;
-  border: 2px solid rgba(8, 70, 240, 0.836);
-  padding-bottom: 5px; }
-
-.botonVolver {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 50px; }
-  .botonVolver a {
-    display: inline;
-    text-decoration: none;
-    font-size: 2rem;
-    color: white;
-    background-color: rgba(8, 70, 240, 0.836);
-    padding: 5px;
-    border-radius: 10px; }
-
-/*CARRITO*/
-.seccionCarrito {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.tablaCarrito {
-  text-align: center;
-  font-size: 2rem;
-  width: 500px;
-  margin-top: 20px; }
-  .tablaCarrito td {
-    border-bottom: solid 1px black;
-    padding: 5px; }
-
-.botonCarrito {
-  display: flex;
-  width: 500px;
-  margin-top: 20px;
-  justify-content: flex-end; }
-  .botonCarrito button {
-    font-size: 2rem;
-    padding: 5px;
-    width: 150px;
-    border-radius: 10px; }
-
-@media screen and (max-width: 1024px) {
-  /*GENERAL*/
-  #titulo {
-    font-size: 8.5rem; }
-  /*SHOP*/
-  .seccionProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 5px;
-    font-size: 2.5rem; }
-  .shopSecciones {
-    margin-left: 20%;
-    margin-right: 5px; } }
-
-@media screen and (max-width: 768px) {
-  /*GENERAL*/
-  #titulo {
-    font-size: 8.5rem; }
-  /*NOSOTOS*/
-  .gridContainerNosotros {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-column: auto;
-    grid-template-rows: 50px, 1fr, 1fr, 50px; }
-  .gridItem3Nosotros {
-    font-size: 2rem;
-    margin-left: 15px;
-    margin-top: 50px; }
-  .nosotrosContenedor {
-    display: flex;
-    align-items: center; }
-    .nosotrosContenedor img {
-      max-width: 100%; }
-  /*SHOP*/
-  .seccionProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 5px;
-    font-size: 2.5rem; }
-  .shopSecciones {
-    margin-left: 22.5%;
-    margin-right: 5px; } }
-
-@media screen and (max-width: 600px) {
-  /*BODY*/
-  body {
-    width: 98.2%; }
-  /*GENERAL*/
-  #titulo {
-    font-size: 8.5rem; }
-  /*MENU*/
-  .iconoBarrasMenuPrincipal {
-    display: block; }
-  .menuResponsive {
-    display: flex;
-    flex-direction: column;
-    margin-top: -500px;
-    text-align: right;
-    margin-right: -30px;
-    width: 100%;
-    background-color: rgba(8, 70, 240, 0.836);
-    border-radius: 3px;
-    z-index: 1; }
-  .menuPrincipal:hover > .menuResponsive {
-    margin-top: 330px;
-    transition: 1s; }
-  /*HOME*/
-  .gridContainer {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-template-rows: 50px, 1fr, 2fr, 50px;
-    grid-column: auto;
-    font-size: 1.5rem; }
-  .contenedorIngreso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.8rem; }
-  .gridItem3 {
-    margin-top: 50px; }
-  /*REGISTRO*/
-  .formulario {
-    font-size: 2rem; }
-    .formulario input {
-      width: 400px; }
-  .formularioRegistro, .nosotrosContenedor {
-    margin-left: 15px; }
-  /*NOSOTOS*/
-  .gridContainerNosotros {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-column: auto;
-    grid-template-rows: 50px, 1fr, 1fr, 50px; }
-  .gridItem3Nosotros {
-    font-size: 2rem;
-    margin-left: 15px;
-    margin-top: 50px; }
-  .nosotrosContenedor {
-    display: flex;
-    align-items: center; }
-    .nosotrosContenedor img {
-      max-width: 100%; }
-  /*SHOP*/
-  .shopContenedor {
-    display: flex;
-    flex-direction: column; }
-  .shopSublista {
-    position: sticky;
-    top: 15px;
-    margin-top: 15px; }
-    .shopSublista li {
-      display: inline;
-      font-size: 2.5rem; }
-  .shopSecciones {
-    margin-top: 30px;
-    margin-left: 15px; }
-    .shopSecciones img {
-      width: 125px;
-      margin: 5px; }
-  .seccionProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto; } }
-
-@media screen and (max-width: 425px) {
-  /*BODY*/
-  body {
-    width: 97.5%; }
-  /*GENERAL*/
-  #titulo {
-    font-size: 7rem; }
-  /*MENU*/
-  .iconoBarrasMenuPrincipal {
-    display: block; }
-  .menuResponsive {
-    display: flex;
-    flex-direction: column;
-    margin-top: -500px;
-    text-align: right;
-    margin-right: -30px;
-    width: 100%;
-    background-color: rgba(8, 70, 240, 0.836);
-    border-radius: 3px;
-    z-index: 1; }
-  .menuPrincipal:hover > .menuResponsive {
-    margin-top: 330px;
-    transition: 1s; }
-  .logoMenu {
-    width: 45px; }
-  /*HOME*/
-  .gridContainer {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-template-rows: 50px, 1fr, 2fr, 50px;
-    grid-column: auto;
-    font-size: 1.5rem; }
-  .formIngreso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.8rem; }
-  .gridItem3 {
-    margin-top: 50px; }
-  /*REGISTRO*/
-  .formulario {
-    font-size: 2rem; }
-    .formulario input {
-      width: 350px; }
-  .formularioRegistro, .nosotrosContenedor {
-    justify-items: center;
-    margin-left: 15px; }
-  .selecSexo {
-    width: 350px; }
-  /*NOSOTOS*/
-  .gridContainerNosotros {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-column: auto;
-    grid-template-rows: 50px, 1fr, 1fr, 50px; }
-  .gridItem3Nosotros {
-    font-size: 2rem;
-    margin-top: 50px;
-    max-width: 100%; }
-  .nosotrosContenedor img {
-    max-width: 100%; }
-  .videoNosotros {
-    margin-right: 10px; }
-  /*SHOP*/
-  .shopContenedor {
-    display: flex;
-    flex-direction: column; }
-  .shopSublista {
-    position: sticky;
-    top: 15px;
-    margin-top: 15px; }
-    .shopSublista li {
-      display: inline;
-      font-size: 2rem; }
-  .shopSecciones {
-    margin-top: 30px;
-    margin-left: 15px; }
-    .shopSecciones img {
-      width: 125px;
-      margin: 5px; }
-  .seccionProductos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; }
-  /*CARRITO*/
-  .seccionCarrito {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .tablaCarrito {
     text-align: center;
-    font-size: 1.5rem;
-    width: 300px;
-    margin-top: 20px; }
-    .tablaCarrito td {
-      border-bottom: solid 1px black;
-      padding: 3px; }
-  .botonCarrito {
+    font-size: 1.5rem; }
+  .menuPrincipal #check {
+    width: 100px; }
+  .menuPrincipal .gridContainerNosotros {
+    display: grid;
+    grid-template-areas: "nav nav" "section aside" "footer footer";
+    grid-template-rows: 50px, auto, 50px;
+    grid-template-columns: auto;
+    height: 100vh; }
+  .menuPrincipal header {
+    grid-area: nav; }
+  .menuPrincipal section {
+    grid-area: section; }
+  .menuPrincipal aside {
+    grid-area: aside; }
+  .menuPrincipal footer {
+    grid-area: footer; }
+  .menuPrincipal .gridItem2Nosotros img {
+    max-width: 100%;
+    margin-left: 15px;
+    border-radius: 10px; }
+  .menuPrincipal .gridItem3Nosotros {
     display: flex;
-    width: 300px;
+    margin-left: 15px;
+    margin-top: 120px;
+    font-size: 2.5rem; }
+    .menuPrincipal .gridItem3Nosotros p {
+      padding: 8px; }
+  .menuPrincipal .shopContenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .menuPrincipal .shopSublista {
+    position: fixed; }
+    .menuPrincipal .shopSublista li {
+      display: block;
+      padding: 5px;
+      height: 45px;
+      font-size: 3rem;
+      margin-left: 15px;
+      margin-top: 15px;
+      background-color: rgba(8, 70, 240, 0.836);
+      border-radius: 10px;
+      text-align: center; }
+      .menuPrincipal .shopSublista li:hover {
+        transform: scale(1.2);
+        transition: 0.5s; }
+    .menuPrincipal .shopSublista a {
+      list-style: none;
+      color: white;
+      text-decoration: none; }
+  .menuPrincipal .seccionProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    font-size: 2.5rem; }
+  .menuPrincipal .shopSecciones {
+    margin-left: 20%;
+    margin-right: 20px;
+    font-size: 3rem; }
+    .menuPrincipal .shopSecciones img {
+      width: 250px;
+      margin: 5px; }
+    .menuPrincipal .shopSecciones input {
+      padding: 0px;
+      border-radius: 10px;
+      width: 130px;
+      height: 40px;
+      font-size: 2rem; }
+    .menuPrincipal .shopSecciones h2 {
+      text-decoration: underline; }
+  .menuPrincipal .seccionArticuloUnitario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgba(8, 70, 240, 0.836);
+    padding-bottom: 5px; }
+  .menuPrincipal .botonVolver {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px; }
+    .menuPrincipal .botonVolver a {
+      display: inline;
+      text-decoration: none;
+      font-size: 2rem;
+      color: white;
+      background-color: rgba(8, 70, 240, 0.836);
+      padding: 5px;
+      border-radius: 10px; }
+  .menuPrincipal .seccionCarrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menuPrincipal .tablaCarrito {
+    text-align: center;
+    font-size: 2rem;
+    width: 500px;
+    margin-top: 20px; }
+    .menuPrincipal .tablaCarrito td {
+      border-bottom: solid 1px black;
+      padding: 5px; }
+  .menuPrincipal .botonCarrito {
+    display: flex;
+    width: 500px;
     margin-top: 20px;
     justify-content: flex-end; }
-    .botonCarrito button {
-      font-size: 1.5rem;
-      padding: 3px;
-      width: 75px;
-      border-radius: 10px; } }
+    .menuPrincipal .botonCarrito button {
+      font-size: 2rem;
+      padding: 5px;
+      width: 150px;
+      border-radius: 10px; }
+  @media screen and (max-width: 1024px) {
+    .menuPrincipal {
+      /*GENERAL*/
+      /*SHOP*/ }
+      .menuPrincipal #titulo {
+        font-size: 8.5rem; }
+      .menuPrincipal .seccionProductos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        font-size: 2.5rem; }
+      .menuPrincipal .shopSecciones {
+        margin-left: 20%;
+        margin-right: 5px; } }
+  @media screen and (max-width: 768px) {
+    .menuPrincipal {
+      /*GENERAL*/
+      /*NOSOTOS*/
+      /*SHOP*/ }
+      .menuPrincipal #titulo {
+        font-size: 8.5rem; }
+      .menuPrincipal .gridContainerNosotros {
+        display: grid;
+        grid-template-areas: "nav" "section" "aside" "footer";
+        grid-column: auto;
+        grid-template-rows: 50px, 1fr, 1fr, 50px; }
+      .menuPrincipal .gridItem3Nosotros {
+        font-size: 2rem;
+        margin-left: 15px;
+        margin-top: 50px; }
+      .menuPrincipal .nosotrosContenedor {
+        display: flex;
+        align-items: center; }
+        .menuPrincipal .nosotrosContenedor img {
+          max-width: 100%; }
+      .menuPrincipal .seccionProductos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        font-size: 2.5rem; }
+      .menuPrincipal .shopSecciones {
+        margin-left: 22.5%;
+        margin-right: 5px; } }
+  @media screen and (max-width: 600px) {
+    .menuPrincipal {
+      /*BODY*/
+      /*GENERAL*/
+      /*MENU*/
+      /*HOME*/
+      /*REGISTRO*/
+      /*NOSOTOS*/
+      /*SHOP*/ }
+      .menuPrincipal body {
+        width: 100%; }
+      .menuPrincipal #titulo {
+        font-size: 8.5rem; }
+      .menuPrincipal .iconoBarrasMenuPrincipal {
+        display: block; }
+      .menuPrincipal .menuResponsive {
+        display: flex;
+        flex-direction: column;
+        margin-top: -500px;
+        text-align: right;
+        margin-right: -30px;
+        width: 100%;
+        background-color: rgba(8, 70, 240, 0.836);
+        border-radius: 3px;
+        z-index: 1; }
+      .menuPrincipal .menuPrincipal:hover > .menuResponsive {
+        margin-top: 330px;
+        transition: 1s; }
+      .menuPrincipal .gridItem2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+      .menuPrincipal .formIngreso {
+        margin-left: 15px;
+        font-size: 2.5rem; }
+        .menuPrincipal .formIngreso input {
+          width: 250px;
+          margin: 5px;
+          border-radius: 10px; }
+        .menuPrincipal .formIngreso h2 {
+          font-size: 3.5rem; }
+      .menuPrincipal .gridItem3 {
+        width: 50%;
+        margin-top: 50px; }
+      .menuPrincipal .carousel {
+        text-align: center; }
+        .menuPrincipal .carousel h2 {
+          font-size: 3.5rem; }
+      .menuPrincipal .carousel-inner {
+        margin-left: 25%; }
+      .menuPrincipal .formulario {
+        font-size: 2rem; }
+        .menuPrincipal .formulario input {
+          width: 400px; }
+      .menuPrincipal .formularioRegistro, .menuPrincipal .nosotrosContenedor {
+        margin-left: 15px; }
+      .menuPrincipal .gridContainerNosotros {
+        display: grid;
+        grid-template-areas: "nav" "section" "aside" "footer";
+        grid-column: auto;
+        grid-template-rows: 50px, 1fr, 1fr, 50px; }
+      .menuPrincipal .gridItem3Nosotros {
+        font-size: 2rem;
+        margin-left: 15px;
+        margin-top: 50px; }
+      .menuPrincipal .nosotrosContenedor {
+        display: flex;
+        align-items: center; }
+        .menuPrincipal .nosotrosContenedor img {
+          max-width: 100%; }
+      .menuPrincipal .shopContenedor {
+        display: flex;
+        flex-direction: column; }
+      .menuPrincipal .shopSublista {
+        position: sticky;
+        top: 15px;
+        margin-top: 15px; }
+        .menuPrincipal .shopSublista li {
+          display: inline;
+          font-size: 2.5rem; }
+      .menuPrincipal .shopSecciones {
+        margin-top: 30px;
+        margin-left: 15px; }
+        .menuPrincipal .shopSecciones img {
+          width: 125px;
+          margin: 5px; }
+      .menuPrincipal .seccionProductos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto; } }
+  @media screen and (max-width: 425px) {
+    .menuPrincipal {
+      /*BODY*/
+      /*GENERAL*/
+      /*MENU*/
+      /*HOME*/
+      /*REGISTRO*/
+      /*NOSOTOS*/
+      /*SHOP*/
+      /*CARRITO*/ }
+      .menuPrincipal body {
+        width: 100%; }
+      .menuPrincipal #titulo {
+        font-size: 7rem; }
+      .menuPrincipal .iconoBarrasMenuPrincipal {
+        display: block; }
+      .menuPrincipal .menuResponsive {
+        display: flex;
+        flex-direction: column;
+        margin-top: -500px;
+        text-align: right;
+        margin-right: -30px;
+        width: 100%;
+        background-color: rgba(8, 70, 240, 0.836);
+        border-radius: 3px;
+        z-index: 1; }
+      .menuPrincipal .menuPrincipal:hover > .menuResponsive {
+        margin-top: 330px;
+        transition: 1s; }
+      .menuPrincipal .logoMenu {
+        width: 45px; }
+      .menuPrincipal .gridItem2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+      .menuPrincipal .formIngreso {
+        margin-left: 15px;
+        font-size: 2.5rem; }
+        .menuPrincipal .formIngreso input {
+          width: 250px;
+          margin: 5px;
+          border-radius: 10px; }
+        .menuPrincipal .formIngreso h2 {
+          font-size: 3.5rem; }
+      .menuPrincipal .gridItem3 {
+        width: 50%;
+        margin-top: 50px; }
+      .menuPrincipal .carousel {
+        text-align: center; }
+        .menuPrincipal .carousel h2 {
+          font-size: 3.5rem; }
+      .menuPrincipal .carousel-inner {
+        margin-left: 25%; }
+      .menuPrincipal .formulario {
+        font-size: 2rem; }
+        .menuPrincipal .formulario input {
+          width: 350px; }
+      .menuPrincipal .formularioRegistro, .menuPrincipal .nosotrosContenedor {
+        justify-items: center;
+        margin-left: 15px; }
+      .menuPrincipal .selecSexo {
+        width: 350px; }
+      .menuPrincipal .gridContainerNosotros {
+        display: grid;
+        grid-template-areas: "nav" "section" "aside" "footer";
+        grid-column: auto;
+        grid-template-rows: 50px, 1fr, 1fr, 50px; }
+      .menuPrincipal .gridItem3Nosotros {
+        font-size: 2rem;
+        margin-top: 50px;
+        max-width: 100%; }
+      .menuPrincipal .nosotrosContenedor img {
+        max-width: 100%; }
+      .menuPrincipal .videoNosotros {
+        margin-right: 10px; }
+      .menuPrincipal .shopContenedor {
+        display: flex;
+        flex-direction: column; }
+      .menuPrincipal .shopSublista {
+        position: sticky;
+        top: 15px;
+        margin-top: 15px; }
+        .menuPrincipal .shopSublista li {
+          display: inline;
+          font-size: 2rem; }
+      .menuPrincipal .shopSecciones {
+        margin-top: 30px;
+        margin-left: 15px; }
+        .menuPrincipal .shopSecciones img {
+          width: 125px;
+          margin: 5px; }
+      .menuPrincipal .seccionProductos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; }
+      .menuPrincipal .seccionCarrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      .menuPrincipal .tablaCarrito {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 300px;
+        margin-top: 20px; }
+        .menuPrincipal .tablaCarrito td {
+          border-bottom: solid 1px black;
+          padding: 3px; }
+      .menuPrincipal .botonCarrito {
+        display: flex;
+        width: 300px;
+        margin-top: 20px;
+        justify-content: flex-end; }
+        .menuPrincipal .botonCarrito button {
+          font-size: 1.5rem;
+          padding: 3px;
+          width: 75px;
+          border-radius: 10px; } }
