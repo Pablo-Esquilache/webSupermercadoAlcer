@@ -84,10 +84,10 @@ ul li:hover {
 
 
 /*ANIDACION INDEX*/
-.formIngreso {
+.contenedorIngreso {
     margin-left: 15px;
     font-size: 3rem;
-    width: 50%;
+    width: 100%;
     top: 0px;
 //MIXIN
     input {
@@ -137,6 +137,39 @@ footer {
     justify-content: center;
     margin-top: 70px;
     font-size: 3rem;
+}
+.caruselInicio {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    ul {
+        display: flex;
+        padding: 0;
+        width: 400%;	
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+    li {
+        width: 100%;
+        list-style: none;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }
 
 /*REGISTRO*/
@@ -434,6 +467,7 @@ footer {
     .gridItem3 {
         margin-top: 50px;
     }
+
     /*REGISTRO*/
     .formulario {
         font-size: 2rem;
@@ -496,7 +530,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     /*BODY*/
     body {
         width: 97.5%;
