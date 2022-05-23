@@ -82,7 +82,6 @@ ul li:hover {
     display: none;
     }
 
-
 /*ANIDACION INDEX*/
 .contenedorIngreso {
     margin-left: 15px;
@@ -94,20 +93,6 @@ ul li:hover {
         @include Wih-Mar(200px,5px);
         padding: 5px;
         border-radius: $borderR;
-    }
-}
-.ofertaInicio {
-    text-align: center;
-    margin-top: 50px;
-    input {
-        @include Wih-Mar(150px,5px);
-        height: 25px;
-        border-radius: $borderR;
-    }
-    img {
-        border-radius: $borderR;
-        margin: 5px;
-        width: 350px;
     }
 }
 .gridContainer {
@@ -138,10 +123,20 @@ footer {
     margin-top: 70px;
     font-size: 3rem;
 }
+.ofertaInicio {
+    text-align: center;
+    margin-top: 50px;
+    input {
+        @include Wih-Mar(150px,5px);
+        height: 30px;
+        border-radius: $borderR;
+        margin-top: 5px;
+    }
+}
 .caruselInicio {
     max-width: 400px;
     max-height: 400px;
-    margin: 0 auto;
+    margin: auto;
     overflow: hidden;
     ul {
         display: flex;

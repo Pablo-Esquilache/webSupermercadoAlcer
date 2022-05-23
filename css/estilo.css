@@ -75,19 +75,6 @@ ul li:hover {
     padding: 5px;
     border-radius: 10px; }
 
-.ofertaInicio {
-  text-align: center;
-  margin-top: 50px; }
-  .ofertaInicio input {
-    width: 150px;
-    margin: 5px;
-    height: 25px;
-    border-radius: 10px; }
-  .ofertaInicio img {
-    border-radius: 10px;
-    margin: 5px;
-    width: 350px; }
-
 .gridContainer {
   display: grid;
   grid-template-areas: "nav nav" "section aside" "footer footer";
@@ -113,10 +100,20 @@ footer {
   margin-top: 70px;
   font-size: 3rem; }
 
+.ofertaInicio {
+  text-align: center;
+  margin-top: 50px; }
+  .ofertaInicio input {
+    width: 150px;
+    margin: 5px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 5px; }
+
 .caruselInicio {
   max-width: 400px;
   max-height: 400px;
-  margin: 0 auto;
+  margin: auto;
   overflow: hidden; }
   .caruselInicio ul {
     display: flex;
