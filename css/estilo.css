@@ -115,7 +115,7 @@ footer {
   max-height: 400px;
   margin: auto;
   overflow: hidden; }
-  .caruselInicio ul {
+  .caruselInicio ol {
     display: flex;
     padding: 0;
     width: 400%;
