@@ -145,7 +145,7 @@ footer {
     margin-left: -300%; } }
 
 /*REGISTRO*/
-.formularioRegistro, .nosotrosContenedor {
+.formularioRegistro {
   display: flex;
   justify-content: center;
   font-size: 2.5rem; }
@@ -174,37 +174,26 @@ footer {
   width: 100px; }
 
 /*NOSOTROS*/
-.gridContainerNosotros {
-  display: grid;
-  grid-template-areas: "nav nav" "section aside" "footer footer";
-  grid-template-rows: 50px, auto, 50px;
-  grid-template-columns: auto;
-  height: 100vh; }
-
-header {
-  grid-area: nav; }
-
-section {
-  grid-area: section; }
-
-aside {
-  grid-area: aside; }
-
-footer {
-  grid-area: footer; }
-
-.gridItem2Nosotros img {
-  max-width: 100%;
-  margin-left: 15px;
-  border-radius: 10px; }
-
-.gridItem3Nosotros {
+.NosotrosContainer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.imgContainer {
   margin-left: 15px;
-  margin-top: 120px;
-  font-size: 2.5rem; }
-  .gridItem3Nosotros p {
-    padding: 8px; }
+  margin-right: 15px;
+  border-radius: 10px;
+  width: 45%; }
+  .imgContainer img {
+    width: 100%; }
+
+.txtNosotros {
+  margin-left: 15px;
+  font-size: 2.5rem;
+  width: 50%; }
+  .txtNosotros p {
+    line-height: 1.6; }
 
 /*SHOP*/
 .shopContenedor {
@@ -316,27 +305,52 @@ footer {
     font-size: 2.5rem; }
   .shopSecciones {
     margin-left: 20%;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  /*NOSOTOS*/
+  .NosotrosContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+  .imgContainer {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    width: 95%; }
+    .imgContainer img {
+      max-width: 100%; }
+  .txtNosotros {
+    margin-left: 15px;
+    font-size: 2.5rem;
+    width: 95%; }
+    .txtNosotros p {
+      line-height: 1.6; } }
 
 @media screen and (max-width: 768px) {
   /*GENERAL*/
   #titulo {
     font-size: 8.5rem; }
+  body {
+    width: 99%; }
   /*NOSOTOS*/
-  .gridContainerNosotros {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-column: auto;
-    grid-template-rows: 50px, 1fr, 1fr, 50px; }
-  .gridItem3Nosotros {
-    font-size: 2rem;
-    margin-left: 15px;
-    margin-top: 50px; }
-  .nosotrosContenedor {
+  .NosotrosContainer {
     display: flex;
-    align-items: center; }
-    .nosotrosContenedor img {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; }
+  .imgContainer {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    width: 95%; }
+    .imgContainer img {
       max-width: 100%; }
+  .txtNosotros {
+    margin-left: 15px;
+    font-size: 2.5rem;
+    width: 95%; }
+    .txtNosotros p {
+      line-height: 1.6; }
   /*SHOP*/
   .seccionProductos {
     display: grid;
@@ -390,23 +404,8 @@ footer {
     font-size: 2rem; }
     .formulario input {
       width: 400px; }
-  .formularioRegistro, .nosotrosContenedor {
+  .formularioRegistro {
     margin-left: 15px; }
-  /*NOSOTOS*/
-  .gridContainerNosotros {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-column: auto;
-    grid-template-rows: 50px, 1fr, 1fr, 50px; }
-  .gridItem3Nosotros {
-    font-size: 2rem;
-    margin-left: 15px;
-    margin-top: 50px; }
-  .nosotrosContenedor {
-    display: flex;
-    align-items: center; }
-    .nosotrosContenedor img {
-      max-width: 100%; }
   /*SHOP*/
   .shopContenedor {
     display: flex;
@@ -473,25 +472,11 @@ footer {
     font-size: 2rem; }
     .formulario input {
       width: 350px; }
-  .formularioRegistro, .nosotrosContenedor {
+  .formularioRegistro {
     justify-items: center;
     margin-left: 15px; }
   .selecSexo {
     width: 350px; }
-  /*NOSOTOS*/
-  .gridContainerNosotros {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-column: auto;
-    grid-template-rows: 50px, 1fr, 1fr, 50px; }
-  .gridItem3Nosotros {
-    font-size: 2rem;
-    margin-top: 50px;
-    max-width: 100%; }
-  .nosotrosContenedor img {
-    max-width: 100%; }
-  .videoNosotros {
-    margin-right: 10px; }
   /*SHOP*/
   .shopContenedor {
     display: flex;
