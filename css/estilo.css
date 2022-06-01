@@ -64,45 +64,29 @@ ul li:hover {
   display: none; }
 
 /*ANIDACION INDEX*/
+.indexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between; }
+
 .contenedorIngreso {
   margin-left: 15px;
-  font-size: 3rem;
-  width: 100%;
-  top: 0px; }
+  font-size: 3rem; }
   .contenedorIngreso input {
     width: 200px;
     margin: 5px;
     padding: 5px;
     border-radius: 10px; }
 
-.gridContainer {
-  display: grid;
-  grid-template-areas: "nav nav" "section aside" "footer footer";
-  grid-template-rows: 50px, auto, 50px;
-  grid-template-columns: 1fr, 1fr;
-  height: 100vh; }
-
-header {
-  grid-area: nav; }
-
-section {
-  grid-area: section; }
-
-aside {
-  grid-area: aside; }
-
-footer {
-  grid-area: footer; }
-
-.gridItem3 {
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
-  font-size: 3rem; }
-
 .ofertaInicio {
-  text-align: center;
-  margin-top: 50px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3rem;
+  width: 60%;
+  text-align: center; }
   .ofertaInicio input {
     width: 150px;
     margin: 5px;
@@ -326,6 +310,27 @@ footer {
     .txtNosotros p {
       line-height: 1.6; } }
 
+@media screen and (max-width: 900px) {
+  /*BODY*/
+  body {
+    width: 98.8%; }
+  .indexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; }
+  .contenedorIngreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; }
+    .contenedorIngreso form {
+      text-align: center; }
+  .ofertaInicio {
+    width: 50%;
+    margin-top: 30px; } }
+
 @media screen and (max-width: 768px) {
   /*GENERAL*/
   #titulo {
@@ -385,20 +390,6 @@ footer {
   .menuPrincipal:hover > .menuResponsive {
     margin-top: 330px;
     transition: 1s; }
-  /*HOME*/
-  .gridContainer {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-template-rows: 50px, 1fr, 2fr, 50px;
-    grid-column: auto;
-    font-size: 1.5rem; }
-  .contenedorIngreso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.8rem; }
-  .gridItem3 {
-    margin-top: 50px; }
   /*REGISTRO*/
   .formulario {
     font-size: 2rem; }
@@ -453,20 +444,6 @@ footer {
     transition: 1s; }
   .logoMenu {
     width: 45px; }
-  /*HOME*/
-  .gridContainer {
-    display: grid;
-    grid-template-areas: "nav" "section" "aside" "footer";
-    grid-template-rows: 50px, 1fr, 2fr, 50px;
-    grid-column: auto;
-    font-size: 1.5rem; }
-  .formIngreso {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.8rem; }
-  .gridItem3 {
-    margin-top: 50px; }
   /*REGISTRO*/
   .formulario {
     font-size: 2rem; }
