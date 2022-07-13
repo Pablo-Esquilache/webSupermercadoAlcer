@@ -1,4 +1,4 @@
-const seccion_alamcen = [
+const seccion_almacen = [
     {id: 1, nombre: "Arroz" , img: "../imagenes/producto-almacen-arroz.jpg",  precio: 69, stock: 100},
     {id: 2, nombre: "Azucar", img: "../imagenes/producto-almacen-azucar.jpg", precio: 82, stock: 100},
     {id: 3, nombre: "Yerba", img: "../imagenes/producto-almacen-yerba.jpg", precio: 350, stock: 100},
@@ -31,7 +31,7 @@ const seccion_perfumeria = [
 //-----------------------------------------------------------------------------------------------------------
 const div_almacen = document.getElementById('seccion_almacen')
 
-seccion_alamcen.forEach(productos => {
+seccion_almacen.forEach(productos => {
     const pantalla = document.createElement('div');
     pantalla.classList.add('seccionArticuloUnitario')
     pantalla.innerHTML = `
@@ -97,4 +97,37 @@ seccion_perfumeria.forEach(productos => {
         <input type="button" value="Añadir al Carrito">
     `
     div_perfumeria.appendChild(pantalla);
+})
+//-------------------------------------------------------------------------------------------------------------
+
+const registro_usuarios = []
+
+class Usuario {
+    constructor(nombre, apellido, sexo, email, usuario, passw) {
+        this.nombre = nombre
+        this.apellido = apellido
+        this.sexo = sexo
+        this.email = email
+        this.usuario = udsuario
+        this.passw = passw
+    }
+}
+
+const formulario_registro = document.getElementById('formulario_registro')
+formulario_registro.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let nombre = document.getElementById('nombre').value
+    let apellido = document.getElementById('apellido').value
+    let sexo = document.getElementById('sexo').value
+    let email = document.getElementById('email').value
+    let usuario = document.getElementById('usuario').value
+    let passw = document.getElementById('passw').value
+
+     const nuevo_usuario = new Usuario(nombre, apellido, sexo, email, usuario, passw)
+
+     registro_usuarios.push(nuevo_usuario)
+
+     console.log(registro_usuarios)
+
+     formulario_registro.reset()
 })
