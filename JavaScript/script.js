@@ -131,3 +131,14 @@ formulario_registro.addEventListener('submit', (e) => {
 
      formulario_registro.reset()
 })
+
+//------------------------------------
+// let array = []
+
+// if(localStorage.getItem('articulos')){
+//     articulos = JSON.parse(localStorage.getItem('articulos'))
+// }else {
+//     localStorage.setItem('articulos', JSON.stringify(array))
+// }
+
+// localStorage.setItem('articulos', JSON.stringify(array))
