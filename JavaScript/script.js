@@ -1,4 +1,5 @@
-import {seccion_almacen, seccion_limpieza, seccion_bebida, seccion_bazar, seccion_perfumeria} from './data'
+
+/*import {seccion_almacen, seccion_limpieza, seccion_bebida, seccion_bazar, seccion_perfumeria} from './data.js'
 //-----------------------------------------------------------------------------------------------------------
 const div_almacen = document.getElementById('seccion_almacen')
 
@@ -69,9 +70,11 @@ seccion_perfumeria.forEach(productos => {
     `
     div_perfumeria.appendChild(pantalla);
 })
+*/
 //-------------------------------------------------------------------------------------------------------------
 
 const registro_usuarios = []
+console.log(registro_usuarios)
 
 class Usuario {
     constructor(nombre, apellido, sexo, email, usuario, passw) {
@@ -79,14 +82,14 @@ class Usuario {
         this.apellido = apellido
         this.sexo = sexo
         this.email = email
-        this.usuario = udsuario
+        this.usuario = usuario
         this.passw = passw
     }
 }
-//------------------------------------------------------------------------------------------------------------------------
 
-const formulario_registro = document.getElementById('formulario_registro')
-formulario_registro.addEventListener('submit', (e) => {
+const formulario_registros = document.getElementById('formulario_registros')
+
+formulario_registros.addEventListener('submit', (e) => {
     e.preventDefault()
     let nombre = document.getElementById('nombre').value
     let apellido = document.getElementById('apellido').value
@@ -99,16 +102,9 @@ formulario_registro.addEventListener('submit', (e) => {
 
      registro_usuarios.push(nuevo_usuario)
 
-     formulario_registro.reset()
+     console.log(registro_usuarios)
+
+     formulario_registros.reset()
 })
 
-//------------------------------------
-// let array = []
 
-// if(localStorage.getItem('articulos')){
-//     articulos = JSON.parse(localStorage.getItem('articulos'))
-// }else {
-//     localStorage.setItem('articulos', JSON.stringify(array))
-// }
-
-// localStorage.setItem('articulos', JSON.stringify(array))
