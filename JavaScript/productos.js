@@ -1,5 +1,5 @@
 
-/*import {seccion_almacen, seccion_limpieza, seccion_bebida, seccion_bazar, seccion_perfumeria} from './data.js'
+import {seccion_almacen, seccion_limpieza, seccion_bebida, seccion_bazar, seccion_perfumeria} from './data.js'
 //-----------------------------------------------------------------------------------------------------------
 const div_almacen = document.getElementById('seccion_almacen')
 
@@ -70,41 +70,6 @@ seccion_perfumeria.forEach(productos => {
     `
     div_perfumeria.appendChild(pantalla);
 })
-*/
-//-------------------------------------------------------------------------------------------------------------
 
-const registro_usuarios = []
-console.log(registro_usuarios)
-
-class Usuario {
-    constructor(nombre, apellido, sexo, email, usuario, passw) {
-        this.nombre = nombre
-        this.apellido = apellido
-        this.sexo = sexo
-        this.email = email
-        this.usuario = usuario
-        this.passw = passw
-    }
-}
-
-const formulario_registros = document.getElementById('formulario_registros')
-
-formulario_registros.addEventListener('submit', (e) => {
-    e.preventDefault()
-    let nombre = document.getElementById('nombre').value
-    let apellido = document.getElementById('apellido').value
-    let sexo = document.getElementById('sexo').value
-    let email = document.getElementById('email').value
-    let usuario = document.getElementById('usuario').value
-    let passw = document.getElementById('passw').value
-
-     const nuevo_usuario = new Usuario(nombre, apellido, sexo, email, usuario, passw)
-
-     registro_usuarios.push(nuevo_usuario)
-
-     console.log(registro_usuarios)
-
-     formulario_registros.reset()
-})
 
 

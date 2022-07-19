@@ -1,3 +1,4 @@
+
 const seccion_almacen = [
     {id: 1, nombre: "Arroz" , img: "../imagenes/producto-almacen-arroz.jpg",  precio: 69, stock: 100},
     {id: 2, nombre: "Azucar", img: "../imagenes/producto-almacen-azucar.jpg", precio: 82, stock: 100},
