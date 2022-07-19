@@ -307,7 +307,11 @@ ul li:hover {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 .seccionArticuloUnitario {
+=======
+MAP-GET .seccionArticuloUnitario {
+>>>>>>> aplicandoJS
   display: flex;
   flex-direction: column;
   justify-content: space-around;
