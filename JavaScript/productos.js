@@ -70,6 +70,7 @@ seccion_perfumeria.forEach(productos => {
     `
     div_perfumeria.appendChild(pantalla);
 })
+//--------------------------------------------------------------------------------------------------------------
 
 
 

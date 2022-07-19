@@ -578,6 +578,14 @@ MAP-GET
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    .seccionArticuloUnitario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        border: 2px solid rgba(8, 70, 240, 0.836);
+        padding-bottom: 5px;
 
 /*CARRITO*/
 .seccionCarrito {
@@ -608,4 +616,4 @@ MAP-GET
     }
 }
 
-}
+}}

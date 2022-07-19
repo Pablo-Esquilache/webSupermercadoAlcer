@@ -6,7 +6,7 @@ import {registro_usuarios} from './registro.js'
 // const ingreso_passw = document.getElementById('contraseña').value
 
 // formulario_ingreso.addEventListener('submit', () => {
-//         if(ingreso_usuario == "Pablo" & ingreso_passw == 12345) {
+//         if(ingreso_usuario == "Pablo" && ingreso_passw == 12345) {
 //             alert("La sesion ha sido iniciada")
 //         }
 //         else {

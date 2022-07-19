@@ -307,11 +307,7 @@ ul li:hover {
   text-decoration: underline;
 }
 
-<<<<<<< HEAD
 .seccionArticuloUnitario {
-=======
-MAP-GET .seccionArticuloUnitario {
->>>>>>> aplicandoJS
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -620,29 +616,38 @@ MAP-GET .seccionArticuloUnitario {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-  /*CARRITO*/
-  .seccionCarrito {
+  .seccionArticuloUnitario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgba(8, 70, 240, 0.836);
+    padding-bottom: 5px;
+    /*CARRITO*/
+  }
+  .seccionArticuloUnitario .seccionCarrito {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .tablaCarrito {
+  .seccionArticuloUnitario .tablaCarrito {
     text-align: center;
     font-size: 1.5rem;
     width: 300px;
     margin-top: 20px;
   }
-  .tablaCarrito td {
+  .seccionArticuloUnitario .tablaCarrito td {
     border-bottom: solid 1px black;
     padding: 3px;
   }
-  .botonCarrito {
+  .seccionArticuloUnitario .botonCarrito {
     display: flex;
     width: 300px;
     margin-top: 20px;
     justify-content: flex-end;
   }
-  .botonCarrito button {
+  .seccionArticuloUnitario .botonCarrito button {
     font-size: 1.5rem;
     padding: 3px;
     width: 75px;
