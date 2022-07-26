@@ -3,51 +3,26 @@ import {registro_usuarios} from './registro.js'
 
 console.log(registro_usuarios)
 
+let usuario_ingreso = registro_usuarios.find((usuario) => usuario.usuario === "rosi")
+console.log(usuario_ingreso)
+let usuario_passw = registro_usuarios.find((passw) => passw.usuario === "pablitoo")
+console.log(usuario_passw)
+
 const formulario_ingreso = document.getElementById('formulario_ingreso')
-const ingreso_usuario = document.getElementById('usiario').value
-const ingreso_passw = document.getElementById('contraseña').value
+let ingreso_usuario = document.getElementById('usiario').value
+let ingreso_passw = parseInt(document.getElementById('contraseña').value)
 
-formulario_ingreso.addEventListener('submit', ()=> {
-    registro_usuarios.forEach((usuario,passw)=> {
-    if(ingreso_usuario === `registro_usuarios${usuario}` && ingreso_passw === `registro_usuarios${passw}`){
-        alert("Sesion iniciada existosamente")
+formulario_ingreso.addEventListener('submit', (e)=> {    
+    e.preventDefault()
+    let usuario_ingreso = registro_usuarios.some((usuario) => usuario.usuario === ingreso_usuario)
+    let usuario_passw = registro_usuarios.some((passw) => passw.usuario === ingreso_passw)
+
+    if (usuario_ingreso == true ||  usuario_passw == true){
+        alert("Bienvenido")
     } else {
-        alert("Ingrese datos validos")
+        alert("Nono")
     }
+    
+    formulario_ingreso.reset()
 })
-})
 
-/*
-//BOTON INICIAR CESION
-bntInicio.addEventListener(`click`, () => {
-    if (localStorage.getItem(`usuariosRegistrados`)) {
-        usuarioNuevo = JSON.parse(localStorage.getItem(`usuariosRegistrados`)) //con esto veo si esta creado el localStorage lo guardo en una variable y sino lo creo
-    } else {
-        localStorage.setItem(`usuariosRegistrados`, JSON.stringify(usuarioNuevo))
-    }
-
-
-    let flag = usuarioNuevo.some(user => user.dni === idUsuario.value && idClave.value === user.clave)
-    //guardo en una variable true o False que devuelve some del comparar lo que ingreso por teclado el usuario con lo archivado en el localStorage
-    if (flag === true) {
-        mensaje1.innerHTML = `
-        <p> Ingreso Exitoso</p>
-        `
-        let usuarioActivo = idUsuario.value //guardo en una variable el usuario que ingreso
-        localStorage.setItem(`usuarioActivo`, usuarioActivo) //lo guardo en el localStorage para luego consultarlo en el programa
-        idUsuario.value = ""
-        idClave.value = ""
-
-        setTimeout(function () {
-            window.location = "programa.html" //cambia a otra ventana y le doy unos segundos de tiempo para que se vea el mensaje de ingreso
-        }, 1500)
-
-    } else {
-        mensaje1.innerHTML = `
-       <p> Error de usuario y/o contraseña</p>
-   `
-        idUsuario.value = ""
-        idClave.value = ""
-    }
-})
-*/
