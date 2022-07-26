@@ -19,7 +19,7 @@ else {
     localStorage.setItem('base_datos_usuarios', JSON.stringify(registro_usuarios))
 }
 
-const formulario_registros = document.getElementById('formulario_registros')
+const formulario_registros = document.getElementById('formulario_registros');
 
 formulario_registros.addEventListener('submit', (e) => {
     e.preventDefault()

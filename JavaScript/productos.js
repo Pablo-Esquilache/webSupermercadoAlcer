@@ -10,7 +10,7 @@ seccion_almacen.forEach(productos => {
         <h2>${productos.nombre}</h2>
         <img src="${productos.img}" alt="">
         <p>${productos.precio}</p>
-        <input type="button" value="Añadir al Carrito">
+        <input type="button" id="añadir" value="Añadir al Carrito">
     `
     div_almacen.appendChild(pantalla);
 })
@@ -24,7 +24,7 @@ seccion_limpieza.forEach(productos => {
         <h2>${productos.nombre}</h2>
         <img src="${productos.img}" alt="">
         <p>${productos.precio}</p>
-        <input type="button" value="Añadir al Carrito">
+        <input type="button" id="añadir" value="Añadir al Carrito">
     `
     div_lipieza.appendChild(pantalla);
 })
@@ -38,7 +38,7 @@ seccion_bebida.forEach(productos => {
         <h2>${productos.nombre}</h2>
         <img src="${productos.img}" alt="">
         <p>${productos.precio}</p>
-        <input type="button" value="Añadir al Carrito">
+        <input type="button" id="añadir" value="Añadir al Carrito">
     `
     div_bebidas.appendChild(pantalla);
 })
@@ -52,7 +52,7 @@ seccion_bazar.forEach(productos => {
         <h2>${productos.nombre}</h2>
         <img src="${productos.img}" alt="">
         <p>${productos.precio}</p>
-        <input type="button" value="Añadir al Carrito">
+        <input type="button" id="añadir" value="Añadir al Carrito">
     `
     div_bazar.appendChild(pantalla);
 })
@@ -66,11 +66,25 @@ seccion_perfumeria.forEach(productos => {
         <h2>${productos.nombre}</h2>
         <img src="${productos.img}" alt="">
         <p>${productos.precio}</p>
-        <input type="button" value="Añadir al Carrito">
+        <input type="button" id="añadir" value="Añadir al Carrito">
     `
     div_perfumeria.appendChild(pantalla);
 })
 //--------------------------------------------------------------------------------------------------------------
+// const btn_añadir = document.getElementById('añadir')
 
+// const seccion_carrito = document.getElementById('seccion_carrito')
 
+// btn_añadir.addEventListener('click', ()=> {
+//     seccion_almacen.forEach((producto) => {
+//         seccion_carrito.innerHTML +=   `<div>
+//                                             <tr>
+//                                                 <td><b>Producto</b></td>
+//                                                 <td><b>Cantidad</b></td>
+//                                                 <td><b>Precio</b></td>
+//                                                 <td><b>Sub Total</b></td>
+//                                             </tr>>
+//                                         </div>`
+//     })
+// })
 
